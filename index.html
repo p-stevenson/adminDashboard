@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nCSSReset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
     <title>Document</title>
   </head>
@@ -13,21 +20,106 @@
       <div class="header">
         <div class="searchContainer">
           <label for="search"
-            >🔍 <input type="search" name="search" id="search"
+            ><img src="icons/header/search.svg" alt="search icon" class="icon"
           /></label>
-          <a href="#" class="notifications">notificationBell</a>
-          <a href="#" class="profile">profileImage</a>
-          <p class="userName">John Doe</p>
+          <input type="search" name="search" id="search" />
+          <a href="#" class="notifications"
+            ><img
+              src="icons/header/notification-bell-outline.svg"
+              alt="notification bell icon"
+              class="icon"
+          /></a>
+          <a href="#" class="profile"
+            ><img
+              src="images/cat-profile-1.png"
+              alt="user profile image"
+              width="48px"
+              height="48px"
+          /></a>
+          <h2 class="userName">Tobey Maguire</h2>
         </div>
         <div class="headerButtons">
-          <img src="#" alt="User profile image" />
-          <p class="welcomeMessage">Welcome</p>
+          <img
+            src="images/cat-profile-1.png"
+            alt="User profile image"
+            width="72px"
+            height="72px"
+          />
+          <div class="welcomeMessage">
+            <p>Hi there,</p>
+            <h1>Tobey Maguire (@tobestus)</h1>
+          </div>
           <button>New</button>
           <button>Upload</button>
           <button>Share</button>
         </div>
       </div>
-      <div class="sidebar"></div>
+      <div class="sidebar">
+        <div class="logo"><a href="#"><img src="icons/sidebar/dashboard-logo.svg" alt="dashboard logo" width="50px" height="50px"><h1>Dashboard</h1></a></div>
+        <div class="nav-1">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/home.svg" alt="home icon" width="24px" height="24px">
+                </img>
+                <p>Home</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/profile-details-outline.svg" alt="profile details icon" width="24px" height="24px">
+                <p>Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/messages.svg" alt="messages icon" width="24px" height="24px">
+                <p>Messages</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/history.svg" alt="history icon" width="24px" height="24px">
+                <p>History</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/tasks.svg" alt="tasks icon" width="24px" height="24px">
+                <p>Tasks</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/community.svg" alt="community icon" width="24px" height="24px">
+                <p>Communities</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-2">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/settings.svg" alt="settings icon" width="24px" height="24px">
+                <p>Settings</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/support.svg" alt="support icon" width="24px" height="24px">
+                <p>Support</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="icons/sidebar/privacy.svg" alt="privacy icon" width="24px" height="24px">
+                <p>Privacy</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="main">
         <div class="projects"></div>
         <div class="announcements"></div>

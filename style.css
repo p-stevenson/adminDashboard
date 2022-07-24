@@ -23,7 +23,7 @@ body {
   max-width: 2560px;
   flex: 1 1 0;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: repeat(6, 1fr);
   height: 100vh;
 }
@@ -65,9 +65,45 @@ body {
   grid-area: 1 / 1 / 7 / 2;
   background-color: #1789c4;
   z-index: 2;
+  padding: 1rem 0 0 1rem;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 5rem;
+  min-width: 350px;
 }
 
-.main {
+.sidebar > .logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sidebar > .logo > a > #logo {
+  margin-top: 10px;
+  align-self: center;
+}
+
+.nav-1,
+.nav-2 {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.sidebar .text {
+  justify-self: flex-start;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+*/ .main {
   grid-area: 2 / 2 / 7 / 3;
   background-color: #ccd9e1;
 }

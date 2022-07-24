@@ -61,51 +61,57 @@ body {
   font-weight: 700;
 }
 
-.sidebar {
-  grid-area: 1 / 1 / 7 / 2;
-  background-color: #1789c4;
-  z-index: 2;
-  padding: 1rem 0 0 1rem;
-  display: grid;
-  grid-template-rows: auto auto auto 1fr;
-  gap: 5rem;
-  min-width: 350px;
-}
-
-.sidebar > .logo {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.sidebar > .logo > a > #logo {
-  margin-top: 10px;
-  align-self: center;
-}
-
-.nav-1,
-.nav-2 {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  align-items: center;
-  justify-items: center;
-  gap: 1rem;
-}
-
-.sidebar .text {
-  justify-self: flex-start;
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-*/ .main {
+.main {
+  border: 2px solid chartreuse;
   grid-area: 2 / 2 / 7 / 3;
   background-color: #ccd9e1;
+  display: grid;
+  grid-template-columns: 3fr 350px;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.main > .projects {
+  /* border: 3px solid orangered; */
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.main > .announcements {
+  /* border: 3px solid hotpink; */
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+.announcements > h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.announcements > .announcements-container {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  display: grid;
+  /* box-shadow: 10px 10px 10px 5px #6969693f; */
+}
+
+.announcements-container > .announcement > h3 {
+  font-weight: 700;
+  padding-bottom: 3px;
+}
+
+.announcements-container > .announcement > p {
+  color: #696969b2;
+}
+
+hr {
+  border-top: 2px solid rgba(82, 82, 82, 0.137);
+}
+
+.main > .trending {
+  /* border: 3px solid purple; */
 }
 
 .icon {
@@ -153,4 +159,47 @@ body {
   text-align: center;
   font-weight: 700;
   color: #fff;
+}
+
+.sidebar {
+  grid-area: 1 / 1 / 7 / 2;
+  background-color: #1789c4;
+  z-index: 2;
+  padding: 1rem 0 0 1rem;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 5rem;
+  min-width: 350px;
+}
+
+.sidebar > .logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sidebar > .logo > a > #logo {
+  margin-top: 10px;
+  align-self: center;
+}
+
+.nav-1,
+.nav-2 {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.sidebar .text {
+  justify-self: flex-start;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
 }

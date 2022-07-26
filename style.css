@@ -189,6 +189,7 @@ body {
 .card-highlight {
   border-radius: 15px 15px 15px 15px;
   background-color: #c54a54;
+  display: grid;
 }
 
 .project-card > .project-title {
